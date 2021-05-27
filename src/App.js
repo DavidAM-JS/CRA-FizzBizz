@@ -10,10 +10,10 @@ const array = function createArray(){
 }();
 
 const setValues = (number) => {
-  if(number % 3 === 0 && number % 5 === 0) return {color: 'green', text: 'FizzBuzz'}
-  else if(number % 3 === 0) return {color: 'red', text: 'Fizz'}
-  else if(number % 5 === 0) return {color: 'yellow', text: 'Buzz'}
-  return {color: 'default', text: ''}
+  return (number % 3 === 0 && number % 5 === 0) ? {color: 'green', text: 'FizzBuzz'} : 
+  (number % 3 === 0) ? {color: 'red', text: 'Fizz'} :
+  (number % 5 === 0) ? {color: 'yellow', text: 'Buzz'} :
+  {color: 'default', text: ''}
 }
 
 function App(){
